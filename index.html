@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+
+ <link rel="stylesheet" href="style.css">
+
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tourism in Burabay</title>
+</head>
+<body>
+<button id="fa" onclick="toggleTheme()">Change the subject</button>
+<img class="foto" style="width: 100%; object-fit: cover;
+border-radius: 20px;" src="byrabai3.jpg" alt="my foto" >
+
+<H1 style="margin-bottom: 0;">Burabay</H1>
+<p style="font-size: 32px;">Burabay is called the pearl of Kazakhstan, and for a good reason, because Burabay is one of the most picturesque places in Kazakhstan! Here you will find clear lakes, dense pine forests, and amazing mountain landscapes.</p>
+<p style="font-size: 32px;">On my website, you will find information about the city's attractions, useful tips for tourists, and a gallery of beautiful places to visit.</p>
+<hr >   
+<h1 style="margin-bottom: 0;">Burabay attractions</h1>
+<p >Borovoe (Burabay) has many beautiful and unique sights that every tourist should visit. The combination of mountains, forests, and lakes creates a truly magical landscape. The natural beauty of this region not only pleases the eye, but also fills the soul with tranquility and inspiration.</p>
+<p ><a href="Burabayattractions.html" target="_blank"> Is their detailed description</a></p>
+<hr>
+<h1 style="margin-bottom:0 ;">Useful information</h1>
+<p > Borovoe (Burabay) has many beautiful and unique sights that every tourist should visit. The combination of mountains, forests, and lakes creates a truly magical landscape. The natural beauty of this region not only pleases the eye, but also fills the soul with tranquility and inspiration.</p>
+<p ><a href="information.html" target="_blank">Click to see all the tips</a></p>
+<hr>
+<H1 style="margin-bottom:0 ;">A gallery of beautiful places to visit</H1>
+<p>Borovoe is a true corner of nature, where every corner is like a postcard. There is an amazing atmosphere here: clear lakes reflect the sky, mountains stretch towards the sun, and pine forests create a sense of peace and freshness.</p>
+<p > <a href="gallery.html" target="_blank">In this section </a>, we have collected the best photos of Burabay's natural beauty.</p>
+<hr size="1">
+<h1 style="margin-top: 80px;">If you have any questions for me, you can contact me:</h1>
+<form>
+<input  type="text" id="yourname"
+placeholder="yourname"
+required><br><br>
+<input id="email"
+type="email"
+placeholder="your email"
+required><br><br>
+<textarea id="ha"
+placeholder="your message"
+required></textarea><br><br>
+<button id="da"
+type="submit"
+>to send</button>
+</form>
+
+
+
+
+
+
+
+
+
+<script>
+Document.getElemantByid('your name').addEventlistener('submit', function(e)
+{e.preventDefault()
+const yourname=document.getElementById('yourname').value;
+const email=document.getElementById('email').value;
+const ha=document.getElementById('ha').value;
+const mailtoLink =`mailto:sotnikovartem112@gmail.com?subject=Сообщение от $
+{encodeURIComponent(your name)}
+&body=Email: $
+{encodeURIComponent(email)}
+%0A%0Amessage: %0А$
+{encodeURIComponent(ha)}`;
+window.location.href =
+mailtoLink;
+});
+
+
+
+function toggleTheme() {
+document.body.classList.toggle("dark-mode");
+}
+</script>
+</body>
+</html>

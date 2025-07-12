@@ -1,0 +1,115 @@
+body {
+background-color: #d3f3f8;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+body.dark-mode {
+background-color: rgb(31, 31, 31);
+color: azure;
+
+}
+
+
+#fa {
+border-radius: 20px;
+color: rgb(254, 254, 254);
+background-color: black;
+margin-bottom: 20px;
+cursor: pointer;
+border: 4px solid rgb(0, 62, 30);
+transition: 0.3s;
+}
+button.dark-mode {
+color: rgb(0, 0, 0);
+background-color: white;
+}
+
+.foto
+{max-height: 520px;
+width: 100%
+object-fit: cover;
+border-radius: 20px;
+display: block;
+border: 3px solid rgb(0, 62, 30);
+
+}
+.foto1 { display: block;
+object-fit: cover;
+margin-top: 20px;
+border: 3px solid rgb(0, 62, 30); 
+border-radius: 20px;
+max-height: 520px;
+width: 100%
+}
+
+hr {
+size: 3;
+color: black;
+}
+
+h1 {color: rgb(1, 83, 41);
+text-align: center;
+font-size:45px;
+}
+p {
+font-size: 27px;
+text-align: center;
+margin: 0;
+margin-bottom: 30px;
+}
+
+
+#da {
+font-size: 25px;
+}
+#email {
+font-size: 25px;
+
+}
+#ha { font-size: 25px;
+
+}
+#yourname { font-size: 25px;
+
+}
+
+
+@media (max-width: 768px)
+{body {font-size: 16px;}
+.con {flex-direction: column;
+align-items: center;
+padding: 10px;}
+.foto,.foto2,.anim {
+width: 80%;
+max-width: 300px;
+margin: 10px 0;}
+.text2
+{text-align: center;
+font-size: 24px;
+padding: 0 10px;
+}
+.h1
+{font-size: 32px;}
+.bio
+{margin: 0 10px;
+font-size: 16px;
+}
+.list 
+{font-size: 16px;
+margin: 8px 0;
+}
+}
+.foto3 {display: flex;flex-wrap: wrap; gap: 10px; justify-content: center;
+width: 1450px;height: auto; border-radius: 20px ; object-fit: cover;}
+
+
+
+
+li {
+background: rgba(96, 157, 232, 0.963);
+margin-bottom: 3px;
+padding: 10px 15px;
+border-radius: 15px;
+font-weight: bold;
+box-shadow: 0 2px 5px rgba(0, 13, 35, 0.1);
+list-style: none;
+font-size: 21px;}
